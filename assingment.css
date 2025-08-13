@@ -112,33 +112,3 @@ a {
   height: auto;
   z-index: 10;
 }
-
-/* .lover-img {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.lover-trest {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: auto;
-  z-index: 10;
-} */
-
-/* .lover-trest {
-
-  width: 200px;
-  margin: 0;
-}
-
-.lover-ul {
-  gap: 500px;
-}
-
-.lover-img {
-  gap: 0;
-} */

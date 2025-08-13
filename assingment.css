@@ -1,0 +1,83 @@
+/* sheard style */
+h1 {
+  text-size-adjust: 800px;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* navbar style */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px;
+
+}
+
+.nav-items {
+  display: flex;
+  text-decoration: none;
+  gap: 20px;
+
+
+}
+
+/* banner style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px;
+
+}
+
+.banner-text {
+  width: 500px;
+
+}
+
+.color {
+  color: chocolate;
+}
+
+/* Flowers card style */
+.title {
+  width: 500px;
+  margin-left: 35%;
+  justify-content: center;
+  text-align: center;
+}
+
+.flower-cards {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+   gap: 20px;  */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.card {
+  /* width: 300px;
+  height: 100px;
+  margin: 100px; */
+  border: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.button {
+  background-color: orange;
+  color: white;
+  width: 280px;
+  height: 35px;
+}

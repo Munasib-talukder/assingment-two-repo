@@ -53,9 +53,7 @@ a {
 }
 
 .flower-cards {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-   gap: 20px;  */
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -104,6 +102,11 @@ a {
   gap: 20px;
 }
 
+.lover-ul {
+  color: rgb(111, 104, 96);
+  grid-template-columns: 20px;
+}
+
 .lover-trest {
   position: absolute;
   top: -20px;
@@ -135,7 +138,7 @@ a {
   object-fit: cover;
   flex: 1;
   border-radius: 20px;
-  /* Added border-radius */
+
 }
 
 .right-side {
@@ -147,12 +150,13 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  /* Added border-radius */
+
 }
 
 /* banner two style */
+
 .bannertwo {
-  /* display: grid; */
+
   background-image: url(B12A02-Responsive-Flowers-main/assets/news-letter-bg.png);
   height: 500px;
   width: 100%;
@@ -165,11 +169,11 @@ a {
 .btnfrom {
   display: flex;
   width: 50%;
-  height: ;
+
   justify-content: center;
   text-align: center;
-  margin: 400px;
-  margin-top: 200px;
+  margin: 20px 380px;
+
 
 }
 
@@ -193,6 +197,7 @@ a {
   width: 600px;
 }
 
+
 /* Footer class */
 .footer {
   display: flex;
@@ -210,18 +215,217 @@ a {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* 2 equal columns */
+
   grid-template-rows: repeat(2, auto);
-  /* 2 rows automatically sized */
+
   gap: 50px;
-  /* optional spacing between items */
+
   list-style: none;
   padding: 0;
   max-width: 400px;
-  /* optional width */
+
 
 }
 
 .footer-icons {
   gap: 25px;
+}
+
+/* Responsive styles */
+
+
+
+
+
+/* Responsive Styles for Phones (max-width: 600px) */
+
+@media (max-width: 600px) {
+
+  /* General text centering */
+  h1,
+  h2,
+  h4,
+  p,
+  li {
+    text-align: center;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .nav-items a {
+    padding: 10px 0;
+    display: block;
+    font-size: 18px;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+  }
+
+  .banner-text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  /* Flower Cards - 2 columns */
+  .flower-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  /* Lover Section */
+  .lover {
+    flex-direction: column;
+    margin: 50px 20px;
+    align-items: center;
+  }
+
+  .lover-text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lover-ul {
+    display: block;
+    padding: 0 10px;
+    list-style-position: inside;
+  }
+
+  .lover-ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .lover-img {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .lover-trest {
+    position: relative;
+    width: 150px;
+    top: 0;
+    right: 0;
+    margin: 0 auto 15px;
+  }
+
+  /* Container layout */
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 15px 0;
+    gap: 20px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    flex: none;
+  }
+
+  /* Banner two subscription section */
+  .bannertwo {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .hw {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .btnfrom {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .btnfrom form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .from {
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .btntwo {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    margin: 50px 20px;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .p-footer {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .li-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .footer-icons {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .footer-icons img {
+    width: 30px;
+    height: 30px;
+  }
 }

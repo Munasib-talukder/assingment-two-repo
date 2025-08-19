@@ -192,3 +192,36 @@ a {
   height: 35px;
   width: 600px;
 }
+
+/* Footer class */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.p-footer {
+  width: 300px;
+  font-size: 20px;
+  color: rgb(93, 98, 103);
+}
+
+.li-footer {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 equal columns */
+  grid-template-rows: repeat(2, auto);
+  /* 2 rows automatically sized */
+  gap: 50px;
+  /* optional spacing between items */
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  /* optional width */
+
+}
+
+.footer-icons {
+  gap: 25px;
+}
